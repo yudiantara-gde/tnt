@@ -89,6 +89,10 @@
             spaceBetween: 16, 
             loop: true,
             speed: 1000,
+            navigation: {
+                nextEl: '.bt-next',
+                prevEl: '.bt-prev',
+            },
             
             //breakpoint
             breakpoints: {

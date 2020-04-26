@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/import.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+    <noscript>
+      <style>
+        .simplebar-content-wrapper {
+        	overflow: auto;
+        }
+        
+      </style>
+    </noscript>
   </head>
   <body class="is-preload">
     <div class="fade-in" id="wrapper">
@@ -68,10 +76,10 @@
                       <li class="current"><a href="index.html">Home</a></li>
                       <li class="current"><a href="#">Properti</a>
                         <ul>
-                          <li><a href="list-villa-destination.html">By Area</a></li>
-                          <li><a href="list-villa-full.html">List Properti</a></li>
-                          <li><a href="villa-detail.html">Villa Detail</a></li>
-                          <li><a href="booking.html">Booking</a></li>
+                          <li><a href="list-villa-destination.html">Properti By Area</a></li>
+                          <li><a href="list-villa-full.html">Properti Listing</a></li>
+                          <li><a href="villa-detail.html">Properti Detail</a></li>
+                          <li><a href="booking.html">Properti Booking</a></li>
                         </ul>
                       </li>
                       <li class="current"><a href="#">User</a>
@@ -237,27 +245,41 @@
                 </div>
                 <div class="side-filter">
                   <div class="w-side-filter">
-                    <h5>Filter by  Price </h5>
+                    <h5>Budget Anda </h5>
                     <div class="content-filter">
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="price-small" value="unchecked">
-                          <label for="price-small">
-                             0 - 5.000.000 / Night <span class="count">(10)</span></label>
+                          <input type="checkbox" id="price-1" value="unchecked">
+                          <label for="price-1">
+                             $0 -  $55 / Night <span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="price-medium" value="unchecked">
-                          <label for="price-medium">
-                             5.000.000 - 10.000.000 / Night<span class="count">(100)</span></label>
+                          <input type="checkbox" id="price-2" value="unchecked">
+                          <label for="price-2">
+                             $56 -  $111 / Night <span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="price-hight" value="unchecked">
-                          <label for="price-hight">
-                             <= 10.000.000 / Night<span class="count">(90)</span></label>
+                          <input type="checkbox" id="price-3" value="unchecked">
+                          <label for="price-3">
+                             $112 -  $168 / Night <span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="price-4" value="unchecked">
+                          <label for="price-4">
+                             $169 -  $225 / Night <span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="price-5" value="unchecked">
+                          <label for="price-5">
+                             $226 + / Night <span class="count">(10)</span></label>
                         </div>
                       </div>
                     </div>
@@ -265,43 +287,67 @@
                 </div>
                 <div class="side-filter">
                   <div class="w-side-filter">
-                    <h5>Filter by Stars</h5>
+                    <h5>Pilihan Tempat Tidur</h5>
+                    <div class="content-filter">
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="twin-bed" value="unchecked">
+                          <label for="twin-bed">Twin<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="double-bed" value="unchecked">
+                          <label for="double-bed">Double<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-filter">
+                  <div class="w-side-filter">
+                    <h5>Nilai Bintang</h5>
                     <div class="content-filter">
                       <div class="box">
                         <div class="check-box">
                           <input type="checkbox" id="stars-1" value="unchecked">
-                          <label for="stars-1"><i class="icon stars"></i><span class="count">(10)</span></label>
+                          <label for="stars-1">
+                             Bintang 1<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
                           <input type="checkbox" id="stars-2" value="unchecked">
-                          <label for="stars-2"><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                          <label for="stars-2">
+                             Bintang 2<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
                           <input type="checkbox" id="stars-3" value="unchecked">
-                          <label for="stars-3"><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                          <label for="stars-3">
+                             Bintang 3<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
                           <input type="checkbox" id="stars-4" value="unchecked">
-                          <label for="stars-4"><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                          <label for="stars-4">
+                             Bintang 4<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
                           <input type="checkbox" id="stars-5" value="unchecked">
-                          <label for="stars-5"><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                          <label for="stars-5">
+                             Bintang 5<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
                           <input type="checkbox" id="stars-0" value="unchecked">
                           <label for="stars-0">
-                             Unrated<span class="count">(10)</span></label>
+                             Tanpa Bintang<span class="count">(10)</span></label>
                         </div>
                       </div>
                     </div>
@@ -309,111 +355,153 @@
                 </div>
                 <div class="side-filter">
                   <div class="w-side-filter">
-                    <h5>Filter by Popular</h5>
+                    <h5>Kebijakan Reservasi</h5>
                     <div class="content-filter">
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="beachfront" value="unchecked">
-                          <label for="beachfront">
-                             Beachfront<span class="count">(10)</span></label>
+                          <input type="checkbox" id="kb-1" value="unchecked">
+                          <label for="kb-1">
+                             Pembatalan Gratis<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="five-stars" value="unchecked">
-                          <label for="fice-stars">
-                             5 Stars<span class="count">(10)</span></label>
+                          <input type="checkbox" id="kb-2" value="unchecked">
+                          <label for="kb-2">
+                             Pesan tanpa kartu kredit<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="kb-2" value="unchecked">
+                          <label for="kb-2">
+                             Tanpa Pembayaran di Muka<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-filter">
+                  <div class="w-side-filter">
+                    <h5>Makanan</h5>
+                    <div class="content-filter">
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="eat-1" value="unchecked">
+                          <label for="eat-1">
+                             Termasuk Sarapan<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="eat-2" value="unchecked">
+                          <label for="eat-2">
+                             Termasuk Tiga Kali Makan<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="eat-3" value="unchecked">
+                          <label for="eat-3">
+                             Paket Inklusif<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="eat-4" value="unchecked">
+                          <label for="eat-4">
+                             Termasuk Sarapan & Makan Malam<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="eat-5" value="unchecked">
+                          <label for="eat-5">
+                             Dapur Lengkap<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-filter">
+                  <div class="w-side-filter">
+                    <h5>Tipe Akomodasi</h5>
+                    <div class="content-filter">
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="guest-house" value="unchecked">
+                          <label for="guest-house">
+                             Guest House<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
                           <input type="checkbox" id="villa" value="unchecked">
                           <label for="villa">
-                             Beachfront<span class="count">(10)</span></label>
+                             Villa<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="wonderful" value="unchecked">
-                          <label for="wonderful">
-                             Wonderful : 9+<span class="count">(10)</span></label>
+                          <input type="checkbox" id="hotel" value="unchecked">
+                          <label for="hotel">
+                             Hotel<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="swimming-pool" value="unchecked">
-                          <label for="swimming-pool">
-                             Swimming Pool<span class="count">(10)</span></label>
+                          <input type="checkbox" id="homestay" value="unchecked">
+                          <label for="homestay">
+                             Homestay<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="beach" value="unchecked">
-                          <label for="beach">
-                             Beach<span class="count">(10)</span></label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="side-filter">
-                  <div class="w-side-filter">
-                    <h5>Filter by Facility</h5>
-                    <div class="content-filter">
-                      <div class="box">
-                        <div class="check-box">
-                          <input type="checkbox" id="parking" value="unchecked">
-                          <label for="parking">
-                             Parking<span class="count">(10)</span></label>
+                          <input type="checkbox" id="resort" value="unchecked">
+                          <label for="resort">
+                             Resor<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="restaurant" value="unchecked">
-                          <label for="price-medium">
-                             Restaurant<span class="count">(10)</span></label>
+                          <input type="checkbox" id="holiday-park" value="unchecked">
+                          <label for="holiday-park">
+                             Holiday Park<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="pet-friendly" value="unchecked">
-                          <label for="pet-friendly">
-                             Pet Friendly<span class="count">(10)</span></label>
+                          <input type="checkbox" id="bed-breakfast" value="unchecked">
+                          <label for="bed-beakfast">
+                             Bed & Breakfast<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="room-service" value="unchecked">
-                          <label for="room-service">
-                             Room Service<span class="count">(10)</span></label>
+                          <input type="checkbox" id="hostel" value="unchecked">
+                          <label for="hostel">
+                             Hostel<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="fitnes-center" value="unchecked">
-                          <label for="fitnes-center">
-                             Fitnes Center<span class="count">(10)</span></label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="side-filter">
-                  <div class="w-side-filter">
-                    <h5>Filter by Room facilities</h5>
-                    <div class="content-filter">
-                      <div class="box">
-                        <div class="check-box">
-                          <input type="checkbox" id="kitchen" value="unchecked">
-                          <label for="kitchen">
-                             Kitchen<span class="count">(10)</span></label>
+                          <input type="checkbox" id="losmen" value="unchecked">
+                          <label for="losmen">
+                             Losmen<span class="count">(10)</span></label>
                         </div>
                       </div>
                       <div class="box">
                         <div class="check-box">
-                          <input type="checkbox" id="private-bathroom" value="unchecked">
-                          <label for="private-bathroom">
-                             Private Bathroom<span class="count">(10)</span></label>
+                          <input type="checkbox" id="apartement" value="unchecked">
+                          <label for="apartement">
+                             Apartement<span class="count">(10)</span></label>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="check-box">
+                          <input type="checkbox" id="rumah-liburan" value="unchecked">
+                          <label for="rumah-liburan">
+                             Rumah Liburan<span class="count">(10)</span></label>
                         </div>
                       </div>
                     </div>
@@ -426,177 +514,269 @@
                     </div>
                     <div class="tabs-filter">
                       <ul>
-                        <li><a href="#filter-money"> <i class="icon price"> </i><span>Price</span></a></li>
-                        <li><a href="#stars"> <i class="icon stars"></i><span>Stars</span></a></li>
-                        <li><a href="#popular"> <i class="icon heart"></i><span>Popular</span></a></li>
-                        <li><a href="#facilities"> <i class="icon suitcase"></i><span>Facilities</span></a></li>
-                        <li><a href="#room-facilities"> <i class="icon bed"></i><span>Room Facilities</span></a></li><a class="btn primary act" href=""> <span>Filter </span></a>
+                        <li><a href="#budget"> <span>Budget Anda</span></a></li>
+                        <li><a href="#bed"> <span>Pilihan Tempat Tidur</span></a></li>
+                        <li><a href="#star"><span>Nilai Bintang</span></a></li>
+                        <li><a href="#reservation"> <span>Kebijakan Reservasi</span></a></li>
+                        <li><a href="#food"><span>Makanan</span></a></li>
+                        <li><a href="#accomodation"><span>Tipe Akomodasi</span></a></li><a class="btn primary act" href=""> <span>Filter </span></a>
                       </ul>
-                      <div class="c-filter" id="filter-money">
+                      <div class="c-filter" id="budget">
                         <div class="content-filter">
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-price-small" value="unchecked">
-                              <label for="m-price-small">
-                                 0 - 5.000.000 / Night <span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-price-1" value="unchecked">
+                              <label for="m-price-1">
+                                 $0 -  $55 / Night <span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-price-medium" value="unchecked">
-                              <label for="m-price-medium">
-                                 5.000.000 - 10.000.000 / Night<span class="count">(100)</span></label>
+                              <input type="checkbox" id="m-price-2" value="unchecked">
+                              <label for="m-price-2">
+                                 $56 -  $111 / Night <span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-price-hight" value="unchecked">
-                              <label for="m-price-hight">
-                                 <= 10.000.000 / Night<span class="count">(90)</span></label>
+                              <input type="checkbox" id="m-price-3" value="unchecked">
+                              <label for="m-price-3">
+                                 $112 -  $168 / Night <span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-price-4" value="unchecked">
+                              <label for="m-price-4">
+                                 $169 -  $225 / Night <span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-price-5" value="unchecked">
+                              <label for="m-price-5">
+                                 $226 + / Night <span class="count">(10)</span></label>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="c-filter" id="stars">
+                      <div class="c-filter" id="bed">
                         <div class="content-filter">
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-stars-1" value="unchecked">
-                              <label for="m-stars-1"><i class="icon stars"></i><span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-twin-bed" value="unchecked">
+                              <label for="m-twin-bed">Twin<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-double-bed" value="unchecked">
+                              <label for="m-double-bed">Double<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-filter" id="star">
+                        <div class="content-filter">
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="null" value="unchecked">
+                              <label for="m-stars-1">
+                                 Bintang 1<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
                               <input type="checkbox" id="m-stars-2" value="unchecked">
-                              <label for="m-stars-2"><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                              <label for="m-stars-2">
+                                 Bintang 2<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
                               <input type="checkbox" id="m-stars-3" value="unchecked">
-                              <label for="m-stars-3"><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                              <label for="m-stars-3">
+                                 Bintang 3<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
                               <input type="checkbox" id="m-stars-4" value="unchecked">
-                              <label for="m-stars-4"><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                              <label for="m-stars-4">
+                                 Bintang 4<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
                               <input type="checkbox" id="m-stars-5" value="unchecked">
-                              <label for="m-stars-5"><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><i class="icon stars"></i><span class="count">(10)</span></label>
+                              <label for="m-stars-5">
+                                 Bintang 5<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
                               <input type="checkbox" id="m-stars-0" value="unchecked">
                               <label for="m-stars-0">
-                                 Unrated<span class="count">(10)</span></label>
+                                 Tanpa Bintang<span class="count">(10)</span></label>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="c-filter" id="popular">
+                      <div class="c-filter" id="reservation">
                         <div class="content-filter">
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-beachfront" value="unchecked">
-                              <label for="m-beachfront">
-                                 Beachfront<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-eat-1" value="unchecked">
+                              <label for="m-eat-1">
+                                 Termasuk Sarapan<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-five-stars" value="unchecked">
-                              <label for="m-fice-stars">
-                                 5 Stars<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-eat-2" value="unchecked">
+                              <label for="m-eat-2">
+                                 Termasuk Tiga Kali Makan<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-3" value="unchecked">
+                              <label for="m-eat-3">
+                                 Paket Inklusif<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-4" value="unchecked">
+                              <label for="m-eat-4">
+                                 Termasuk Sarapan & Makan Malam<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-5" value="unchecked">
+                              <label for="m-eat-5">
+                                 Dapur Lengkap<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-filter" id="food">
+                        <div class="content-filter">
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-1" value="unchecked">
+                              <label for="m-eat-1">
+                                 Termasuk Sarapan<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-2" value="unchecked">
+                              <label for="m-eat-2">
+                                 Termasuk Tiga Kali Makan<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-3" value="unchecked">
+                              <label for="m-eat-3">
+                                 Paket Inklusif<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-4" value="unchecked">
+                              <label for="m-eat-4">
+                                 Termasuk Sarapan & Makan Malam<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-eat-5" value="unchecked">
+                              <label for="m-eat-5">
+                                 Dapur Lengkap<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-filter" id="accomodation">
+                        <div class="content-filter">
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-guest-house" value="unchecked">
+                              <label for="m-guest-house">
+                                 Guest House<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
                               <input type="checkbox" id="m-villa" value="unchecked">
                               <label for="m-villa">
-                                 Beachfront<span class="count">(10)</span></label>
+                                 Villa<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-wonderful" value="unchecked">
-                              <label for="m-wonderful">
-                                 Wonderful : 9+<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-hotel" value="unchecked">
+                              <label for="m-hotel">
+                                 Hotel<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-swimming-pool" value="unchecked">
-                              <label for="m-swimming-pool">
-                                 Swimming Pool<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-homestay" value="unchecked">
+                              <label for="m-homestay">
+                                 Homestay<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-beach" value="unchecked">
-                              <label for="m-beach">
-                                 Beach<span class="count">(10)</span></label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="c-filter" id="facilities">
-                        <div class="content-filter">
-                          <div class="box">
-                            <div class="check-box">
-                              <input type="checkbox" id="m-parking" value="unchecked">
-                              <label for="m-parking">
-                                 Parking<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-resort" value="unchecked">
+                              <label for="m-resort">
+                                 Resor<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-restaurant" value="unchecked">
-                              <label for="m-restaurant">
-                                 Restaurant<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-holiday-park" value="unchecked">
+                              <label for="m-holiday-park">
+                                 Holiday Park<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-pet-friendly" value="unchecked">
-                              <label for="m-pet-friendly">
-                                 Pet Friendly<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-bed-breakfast" value="unchecked">
+                              <label for="m-bed-beakfast">
+                                 Bed & Breakfast<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-room-service" value="unchecked">
-                              <label for="m-room-service">
-                                 Room Service<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-hostel" value="unchecked">
+                              <label for="m-hostel">
+                                 Hostel<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-fitnes-center" value="unchecked">
-                              <label for="m-fitnes-center">
-                                 Fitnes Center<span class="count">(10)</span></label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="c-filter" id="room-facilities">
-                        <div class="content-filter">
-                          <div class="box">
-                            <div class="check-box">
-                              <input type="checkbox" id="m-kitchen" value="unchecked">
-                              <label for="m-kitchen">
-                                 Kitchen<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-losmen" value="unchecked">
+                              <label for="m-losmen">
+                                 Losmen<span class="count">(10)</span></label>
                             </div>
                           </div>
                           <div class="box">
                             <div class="check-box">
-                              <input type="checkbox" id="m-private-bathroom" value="unchecked">
-                              <label for="m-private-bathroom">
-                                 Private Bathroom<span class="count">(10)</span></label>
+                              <input type="checkbox" id="m-apartement" value="unchecked">
+                              <label for="m-apartement">
+                                 Apartement<span class="count">(10)</span></label>
+                            </div>
+                          </div>
+                          <div class="box">
+                            <div class="check-box">
+                              <input type="checkbox" id="m-rumah-liburan" value="unchecked">
+                              <label for="m-rumah-liburan">
+                                 Rumah Liburan<span class="count">(10)</span></label>
                             </div>
                           </div>
                         </div>
@@ -740,7 +920,12 @@
                 <div class="c-pagination">
                   <div class="w-pagination">
                     <!--loader-->
-                    <div class="loader-pagination"></div><a class="btn primary" href=""> <span>load more</span></a>
+                    <div class="loader-pagination"></div>
+                    <!--a.btn.primary(href='') 
+                    span load more
+                    
+                    
+                    -->
                   </div>
                 </div>
               </div>
@@ -829,6 +1014,97 @@
           </div>
         </div>
       </footer>
+      <!--popup-->
+      <!--popup promo-->
+      <!--.popup(style="display: block")-->
+      <div class="popup">
+        <div class="wrp-popup promo">
+          <div class="c-popup">
+            <div class="btn-close"><a href=""><i class="icon close-bold"></i></a></div>
+            <div class="wrp-content simple-bar">
+              <div class="c-title">
+                <h4>Promo   </h4>
+              </div>
+              <div class="c-promo">
+                <div class="row">
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                  <article class="promo">
+                    <div class="wrp-promo">
+                      <div class="wrp-img"><img src="img/content/3497.jpg" alt=""><a href=""></a></div>
+                      <p>Promo Code : <br /><b>TNT-50-2020-Summer</b></p><a class="btn primary" href=""><span>use promo</span></a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/superfish.js"></script>
@@ -837,6 +1113,7 @@
     <script src="js/picker.min.js"></script>
     <script src="js/picker.date.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/simplebar.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/import/jquery-ui.css" type="text/css">
     <script src="js/jquery-ui.min.js"></script>

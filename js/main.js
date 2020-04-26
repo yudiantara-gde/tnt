@@ -21,7 +21,22 @@
 		AOS.init({
 			duration: 1200
 		});
-	
+	//simple bar 
+		var myElement = document.getElementsByClassName('simple-bar')[0];
+		new SimpleBar(myElement, { 
+			autoHide: true,
+			classNames: {
+			  content: 'simplebar-content',
+			  scrollContent: 'simplebar-scroll-content',
+			  scrollbar: 'simplebar-scrollbar',
+			  track: 'simplebar-track'
+			},
+			scrollbarMinSize: 25
+		});
+
+		// $('.simple-bar').each(function(el) {
+		// 	new SimpleBar(el);
+		// });
 	//selectric js
 		$('.selectric').selectric({
 			disableOnMobile: false, 
