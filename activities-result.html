@@ -146,6 +146,7 @@
                   <li><a href="activities.html">Activities</a></li>
                   <li><a href="">Wedding</a></li>
                   <li><a href="blog.html">Blog</a></li>
+                  <li><a class="search" href="javascript:void(0);" onclick="$('.popup.search').show();"><i class="icon search"></i></a></li>
                 </ul>
                 <div class="mobile-nav">
                   <div class="search">
@@ -173,7 +174,7 @@
                       <div class="c-language"><a class="flag id" href="">Indonesia</a><a class="flag en" href="">English (US)</a><a class="flag jp" href="">Japan</a></div>
                       <div class="c-currency"><a class="flag id" href=""> <i class="icon rupiah"></i></a><a class="flag en" href=""> <i class="icon dollar"></i></a><a class="flag jp" href=""> <i class="icon yen"></i></a></div>
                     </div>
-                  </div>
+                  </div><a class="btn-search" href="javascript:void(0);" onclick="$('.popup.search').show();"><i class="icon search"></i></a>
                   <ul class="nav-mobile">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">Book Now</a></li>
@@ -623,11 +624,10 @@
       </footer>
       <!--popup-->
       <!--popup promo-->
-      <!--.popup(style="display: block")-->
-      <div class="popup">
+      <div class="popup find-promo">
         <div class="wrp-popup promo">
           <div class="c-popup">
-            <div class="btn-close"><a href=""><i class="icon close-bold"></i></a></div>
+            <div class="btn-close"><a href="javascript:void(0);" onclick="$('.popup.find-promo').hide();"><i class="icon close-bold"></i></a></div>
             <div class="wrp-content simple-bar">
               <div class="c-title">
                 <h4>Promo   </h4>
@@ -707,6 +707,26 @@
                     </div>
                   </article>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--popup promo-->
+      <div class="popup search">
+        <div class="wrp-popup">
+          <div class="c-popup">
+            <div class="btn-close"><a href="javascript:void(0);" onclick="$('.popup.search').hide();"><i class="icon close-bold"></i></a></div>
+            <div class="wrp-content">
+              <div class="search-form">
+                <form action="">
+                  <div class="row">
+                    <div class="box">
+                      <input type="text" placeholder="type here ...">
+                      <button class="btn primary" type="submit"><span>search</span></button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
